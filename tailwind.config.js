@@ -24,10 +24,7 @@ module.exports = {
         600: '#718096',
         700: '#4a5568',
         800: '#2d3748',
-        900: '#1a202c',
-        light: '#F2F2F2',
-        dark: '#C4C4C4',
-        nanana: '#fc8181'
+        900: '#1a202c'
       },
       red: {
         100: '#fff5f5',
@@ -94,9 +91,7 @@ module.exports = {
         700: '#2b6cb0',
         800: '#2c5282',
         900: '#2a4365',
-        1000: '#2bf462',
-        brand: '#1E2641',
-        brandark: 'rgb(20, 25, 43)'
+        1000: '#2bf462'
       },
       indigo: {
         100: '#ebf4ff',
@@ -197,10 +192,7 @@ module.exports = {
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
-      none: 'none',
-      header: '0 5px 6px rgba(0, 0, 0, 0.5)',
-      equipe: '0 4px 4px rgba(0, 0, 0, 0.25)',
-      card: '8px 8px 4px rgba(0, 0, 0, 0.25)'
+      none: 'none'
     },
     container: {},
     cursor: {

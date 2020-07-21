@@ -1,0 +1,12 @@
+.hero-anim {
+    animation: changeColor 1s infinite;
+    animation-timing-function: step-start;
+}
+
+@keyframes changeColor {
+    0% {@apply bg-transparent}
+    49% {@apply bg-transparent}
+    50% {@apply bg-indigo-300}
+    99% {@apply bg-indigo-300}
+    100% {@apply bg-transparent}
+  }

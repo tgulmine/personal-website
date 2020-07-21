@@ -1,12 +1,25 @@
 import * as React from 'react';
 import './styles/main.scss';
+import { Container } from './components/Container';
+import { Navbar } from './components/Navbar';
+import { Hero } from './components/Hero';
 
 const App: React.FC = () => {
+  /* Container
+    Navbar
+    Hero 
+    Terminal
+      Terminal Header
+      Terminal Window
+    Projects 
+    Contact 
+    Footer */
+
   return (
-    <div>
-      <div className="App mt-2 text-2xl font-bold">Hello</div>
-      <div className="mt-2 text-gray-nanana">world!</div>
-    </div>
+    <Container>
+      <Navbar />
+      <Hero />
+    </Container>
   );
 };
 
