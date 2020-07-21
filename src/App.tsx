@@ -3,6 +3,7 @@ import './styles/main.scss';
 import { Container } from './components/Container';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { Terminal } from './components/Terminal';
 
 const App: React.FC = () => {
   /* Container
@@ -19,6 +20,7 @@ const App: React.FC = () => {
     <Container>
       <Navbar />
       <Hero />
+      <Terminal />
     </Container>
   );
 };
