@@ -1,4 +1,10 @@
 {
+    "info": {
+      "email": "tgulmine@gmail.com",
+      "email_link": "mailto:tgulmine@gmail.com",
+      "git_link": "https://github.com/tgulmine",
+      "pdf_link": "https://drive.google.com/file/d/1liCl-M31hGRxE5l-SbFM2ULQo5L5lUAZ"
+    },
     "projects": [
       {
         "title": "Reddit Clone",

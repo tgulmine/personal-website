@@ -1,0 +1,10 @@
+.border-button {
+    border-bottom: solid 0px;
+    padding: 16px 0px;
+    transition: 0.3s linear;
+}
+  
+.border-button:hover {
+    border-bottom: solid 8px;
+    padding: 12px 0px;
+}

@@ -4,6 +4,10 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.7.4",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-regular-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
     "@svgr/webpack": "4.3.3",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.5",

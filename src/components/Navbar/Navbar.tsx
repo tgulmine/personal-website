@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './Navbar.scss';
 
 const Navbar: React.FC = () => {
   function clickProjects() {
@@ -11,23 +12,15 @@ const Navbar: React.FC = () => {
   return (
     <div className="flex justify-end mt-5">
       <button
-        className="mx-10 py-4 font-normal text-lg text-gray-700 hover:text-indigo-400 
-        border-b-8 border-transparent hover:border-indigo-500 focus:outline-none"
-        style={{
-          transition: 'border-color 0.5s, color 0.5s',
-          transitionTimingFunction: 'easy-in-out'
-        }}
+        className="mx-10 font-normal text-lg text-gray-700 hover:text-indigo-400 
+        border-button focus:outline-none border-transparent"
         onClick={() => clickProjects()}
       >
         Projects
       </button>
       <button
-        className="mx-10 py-4 font-normal text-lg text-gray-700 hover:text-indigo-400 
-        border-b-8 border-transparent hover:border-indigo-500 focus:outline-none"
-        style={{
-          transition: 'border-color 0.5s, color 0.5s',
-          transitionTimingFunction: 'easy-in-out'
-        }}
+        className="mx-10 font-normal text-lg text-gray-700 hover:text-indigo-400 
+        border-button focus:outline-none border-transparent"
         onClick={() => clickContact()}
       >
         Contact

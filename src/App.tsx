@@ -4,23 +4,17 @@ import { Container } from './components/Container';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Terminal } from './components/Terminal';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
 
 const App: React.FC = () => {
-  /* Container
-    Navbar
-    Hero 
-    Terminal
-      Terminal Header
-      Terminal Window
-    Projects 
-    Contact 
-    Footer */
-
   return (
     <Container>
       <Navbar />
       <Hero />
       <Terminal />
+      <Contact />
+      <Footer />
     </Container>
   );
 };
