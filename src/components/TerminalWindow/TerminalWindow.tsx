@@ -33,11 +33,82 @@ const TerminalHeader: React.FC = () => {
 
   //write functions to generate strings for the strings with "" and arrays with ["",""]
 
+  function getStringText(str: string) {
+    let newStr = '"' + str + '"';
+    return newStr;
+  }
+
+  function getArrayText(str: string, isLast: boolean) {
+    let newStr;
+    if (isLast) newStr = '"' + str + '"';
+    else newStr = '"' + str + '",';
+    return newStr;
+  }
+
   return (
-    <div className="p-8 bg-gray-600 rounded-b-lg">
-      <div />
-      <div />
-      asdsadsadsa
+    <div className="p-8 bg-gray-700 rounded-b-lg flex flex-col tracking-wider text-lg font-mulish">
+      <div className="flex flex-col mb-6">
+        <div className="flex text-gray-100">
+          <div className="mr-2">{'>'}</div>
+          <div>{name}.currentLocation</div>
+        </div>
+        <div className="text-yellow-500">{getStringText(currentLocation)}</div>
+      </div>
+      <div className="flex flex-col mb-6">
+        <div className="flex text-gray-100">
+          <div className="mr-2">{'>'}</div>
+          <div>{name}.contactInfo</div>
+        </div>
+        <div className="text-yellow-500">{getStringText(currentLocation)}</div>
+      </div>
+      <div className="flex flex-col mb-6">
+        <div className="flex text-gray-100">
+          <div className="mr-2">{'>'}</div>
+          <div>{name}.resume</div>
+        </div>
+        <div className="text-yellow-500">{getStringText(currentLocation)}</div>
+      </div>
+      <div className="flex flex-col mb-6">
+        <div className="flex text-gray-100">
+          <div className="mr-2">{'>'}</div>
+          <div>{name}.interests</div>
+        </div>
+        {interests ? (
+          <div className="flex text-yellow-500">
+            [
+            {interests.map((int: string, index: number) => (
+              <div key={index} className={index === interests.length - 1 ? '' : 'mr-2'}>
+                {getArrayText(int, index === interests.length - 1)}
+              </div>
+            ))}
+            ]
+          </div>
+        ) : null}
+      </div>
+      <div className="flex flex-col mb-6">
+        <div className="flex text-gray-100">
+          <div className="mr-2">{'>'}</div>
+          <div>{name}.education</div>
+        </div>
+        <div className="text-yellow-500">{getStringText(education)}</div>
+      </div>
+      <div className="flex flex-col mb-6">
+        <div className="flex text-gray-100">
+          <div className="mr-2">{'>'}</div>
+          <div>{name}.skills</div>
+        </div>
+        {skills ? (
+          <div className="flex text-yellow-500">
+            [
+            {skills.map((skill: string, index: number) => (
+              <div key={index} className={index === skills.length - 1 ? '' : 'mr-2'}>
+                {getArrayText(skill, index === skills.length - 1)}
+              </div>
+            ))}
+            ]
+          </div>
+        ) : null}
+      </div>
     </div>
   );
 };
