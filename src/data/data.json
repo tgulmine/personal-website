@@ -1,0 +1,29 @@
+{
+    "projects": [
+      {
+        "title": "Reddit Clone",
+        "description": "Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.",
+        "skills": ["HTML5", "CSS3", "Sass", "JavaScript", "ES6", "ReactJS", "Redux"],
+        "link_demo": "https://reddit-clone-333.herokuapp.com/",
+        "link_git": "https://github.com/tgulmine/reddit-clone",
+        "img": "../../img/cardreddit1.png"
+      },
+      {
+        "title": "Prime Visuals",
+        "description": "Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.",
+        "skills": ["HTML5", "CSS3", "Sass", "JavaScript", "ES6", "ReactJS", "Redux"],
+        "link_demo": "https://primevisuals.netlify.app/",
+        "link_git": "https://github.com/tgulmine/prime-visuals",
+        "img": "../../img/cardprime1.png"
+      },
+      {
+        "title": "Dog & Quote",
+        "description": "Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.",
+        "skills": ["HTML5", "CSS3", "Sass", "JavaScript", "ES6", "ReactJS", "Redux"],
+        "link_demo": "https://dog-and-quote.netlify.app/",
+        "link_git": "https://github.com/tgulmine/dog-and-quote",
+        "img": "../../img/carddog1.png"
+      }
+    ]
+  }
+   
