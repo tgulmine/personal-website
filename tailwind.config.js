@@ -10,6 +10,45 @@ module.exports = {
       xl: '1280px'
     },
     colors: {
+      'bg': '#F6F9FC',
+
+      'navbar-gray': '#5A5D7A',
+      'navbar-purple': '#90A9F9',
+      'navbar-border': '#8E97E6',
+
+      'hero-title': '#747FE0',
+      'hero-anim': '#A2AAEA',
+      'hero-text': '#525F7F',
+
+      'terminal-header-bg': '#E4E3E5',
+      'terminal-header-red': '#F96256',
+      'terminal-header-yellow': '#FDBC3D',
+      'terminal-header-green': '#33C948',
+      'terminal-window-bg': '#5A5D7A',
+      'terminal-window-white': '#F7F7F7',
+      'terminal-window-yellow': '#E7D184',
+      'terminal-window-blue': '#35FEFF',
+      'terminal-window-blink': '#C0C1CC',
+
+      'section-title': '#525F7F',
+      'section-border': '#747FE0',
+
+      'project-bg': '#FFFFFF',
+      'project-text': '#525F7F',
+      'project-skill': '#92EAC0',
+      'project-demo-bg': '#747FE0',
+      'project-demo-bg_hover': '#92AAF9',
+      'project-demo-text': '#FFFFFF',
+      'project-git-bg': '#FFFFFF',
+      'project-git-text': '#747FE0',
+      'project-git-text_hover': '#9099E6',
+
+      'contact-links': '#5A5D7A',
+      'contact-bar': '#525F7F',
+
+      'footer': '#525F7F',
+
+
       transparent: 'transparent',
 
       black: '#000',
@@ -193,7 +232,8 @@ module.exports = {
       '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
-      none: 'none'
+      none: 'none',
+      'terminal': '0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12)'
     },
     container: {},
     cursor: {

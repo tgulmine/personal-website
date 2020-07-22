@@ -5,7 +5,16 @@ type Props = {
 };
 
 const Container = ({ children }: Props) => {
-  return <div className="w-full h-full flex flex-col px-10 max-w-5xl mr-auto ml-auto">{children}</div>;
+  return (
+    <div
+      className="w-full h-full flex flex-col mx-10 mr-auto ml-auto"
+      style={{
+        maxWidth: 1000
+      }}
+    >
+      {children}
+    </div>
+  );
 };
 
 export default Container;
