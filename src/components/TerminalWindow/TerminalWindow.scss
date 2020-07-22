@@ -1,0 +1,12 @@
+.terminal-anim {
+    animation: terminalBlink 1s infinite;
+    animation-timing-function: step-start;
+}
+
+@keyframes terminalBlink {
+    0% {@apply bg-transparent}
+    49% {@apply bg-transparent}
+    50% {@apply bg-gray-300}
+    99% {@apply bg-gray-300}
+    100% {@apply bg-transparent}
+}

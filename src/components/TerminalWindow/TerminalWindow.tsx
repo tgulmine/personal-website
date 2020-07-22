@@ -1,28 +1,25 @@
 import * as React from 'react';
+import './TerminalWindow.scss';
 
 interface IInfo {
   title: string;
   link: string;
 }
 
-interface IContact {
-  gmail: IInfo;
-  github: IInfo;
-}
-
 const TerminalHeader: React.FC = () => {
   const name: string = 'Thiago';
   const currentLocation: string = 'Brazil, Brasília - DF';
-  const contactInfo: IContact = {
-    gmail: {
+  const contactInfo: IInfo[] = [
+    {
       title: 'tgulmine@gmail.com',
       link: 'mailto:tgulmine@gmail.com'
     },
-    github: {
+    {
       title: 'github',
       link: 'https://github.com/tgulmine'
     }
-  };
+  ];
+
   const resume: IInfo = {
     title: 'tgulmine.pdf',
     link: 'https://drive.google.com/file/d/1liCl-M31hGRxE5l-SbFM2ULQo5L5lUAZ'
@@ -59,14 +56,30 @@ const TerminalHeader: React.FC = () => {
           <div className="mr-2">{'>'}</div>
           <div>{name}.contactInfo</div>
         </div>
-        <div className="text-yellow-500">{getStringText(currentLocation)}</div>
+        <div className="text-yellow-500 flex flex-wrap">
+          {contactInfo.map((cont: IInfo, index: number) => (
+            <div key={index} className={index === interests.length - 1 ? '' : 'mr-2'}>
+              {index === 0 ? '["' : '"'}
+              <a className="text-teal-400" rel="noopener noreferrer" href={cont.link} target="_blank">
+                {cont.title}
+              </a>
+              {index === contactInfo.length - 1 ? '"]' : '",'}
+            </div>
+          ))}
+        </div>
       </div>
       <div className="flex flex-col mb-6">
         <div className="flex text-gray-100">
           <div className="mr-2">{'>'}</div>
           <div>{name}.resume</div>
         </div>
-        <div className="text-yellow-500">{getStringText(currentLocation)}</div>
+        <div className="text-yellow-500">
+          "
+          <a className="text-teal-400" rel="noopener noreferrer" href={resume.link} target="_blank">
+            {resume.title}
+          </a>
+          "
+        </div>
       </div>
       <div className="flex flex-col mb-6">
         <div className="flex text-gray-100">
@@ -74,7 +87,7 @@ const TerminalHeader: React.FC = () => {
           <div>{name}.interests</div>
         </div>
         {interests ? (
-          <div className="flex text-yellow-500">
+          <div className="flex flex-wrap text-yellow-500">
             [
             {interests.map((int: string, index: number) => (
               <div key={index} className={index === interests.length - 1 ? '' : 'mr-2'}>
@@ -98,7 +111,7 @@ const TerminalHeader: React.FC = () => {
           <div>{name}.skills</div>
         </div>
         {skills ? (
-          <div className="flex text-yellow-500">
+          <div className="flex text-yellow-500 flex-wrap">
             [
             {skills.map((skill: string, index: number) => (
               <div key={index} className={index === skills.length - 1 ? '' : 'mr-2'}>
@@ -108,6 +121,10 @@ const TerminalHeader: React.FC = () => {
             ]
           </div>
         ) : null}
+      </div>
+      <div className="flex text-gray-100 mb-6">
+        <div className="mr-2">{'>'}</div>
+        <div className="terminal-anim w-2" />
       </div>
     </div>
   );
