@@ -1,5 +1,6 @@
 import * as React from 'react';
 import './TerminalWindow.scss';
+import data from '../../data/data.json';
 
 interface IInfo {
   title: string;
@@ -7,28 +8,26 @@ interface IInfo {
 }
 
 const TerminalHeader: React.FC = () => {
-  const name: string = 'Thiago';
-  const currentLocation: string = 'Brazil, Brasília - DF';
+  const name: string = data.info.name;
+  const currentLocation: string = data.info.location;
   const contactInfo: IInfo[] = [
     {
-      title: 'tgulmine@gmail.com',
-      link: 'mailto:tgulmine@gmail.com'
+      title: data.info.email,
+      link: data.info.email_link
     },
     {
       title: 'github',
-      link: 'https://github.com/tgulmine'
+      link: data.info.git_link
     }
   ];
 
   const resume: IInfo = {
-    title: 'tgulmine.pdf',
-    link: 'https://drive.google.com/file/d/1liCl-M31hGRxE5l-SbFM2ULQo5L5lUAZ'
+    title: data.info.pdf_title,
+    link: data.info.pdf_link
   };
-  const interests: string[] = ['coding', 'gaming', 'coffee', 'reading'];
-  const education: string = 'Digital Games, Instituto de Educação Superior de Brasília - IESB';
-  const skills: string[] = ['Sass', 'Javascript', 'Typescript', 'React', 'git', 'Tailwind'];
-
-  //write functions to generate strings for the strings with "" and arrays with ["",""]
+  const interests: string[] = data.info.interests;
+  const education: string = data.info.education;
+  const skills: string[] = data.info.skills;
 
   function getStringText(str: string) {
     let newStr = '"' + str + '"';

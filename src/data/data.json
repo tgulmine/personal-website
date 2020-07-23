@@ -1,9 +1,16 @@
 {
     "info": {
+      "name": "Thiago",
+      "fullName": "Thiago Gulmine",
       "email": "tgulmine@gmail.com",
       "email_link": "mailto:tgulmine@gmail.com",
       "git_link": "https://github.com/tgulmine",
-      "pdf_link": "https://drive.google.com/file/d/1liCl-M31hGRxE5l-SbFM2ULQo5L5lUAZ"
+      "pdf_title": "tgulmine.pdf",
+      "pdf_link": "https://drive.google.com/file/d/1liCl-M31hGRxE5l-SbFM2ULQo5L5lUAZ",
+      "education": "Digital Games, Instituto de Educação Superior de Brasília - IESB",
+      "location": "Brazil, Brasília - DF",
+      "interests": ["coding", "gaming", "coffee", "reading"],
+      "skills": ["Sass", "Javascript", "Typescript", "React", "git", "Tailwind"]
     },
     "projects": [
       {
