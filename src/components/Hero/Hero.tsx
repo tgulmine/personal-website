@@ -24,14 +24,14 @@ const Hero: React.FC = () => {
 
   return (
     <div className="flex flex-col mt-24 mb-16">
-      <div className="flex text-indigo-500 mt-4 text-6xl">
+      <div className="flex text-hero-title mt-4 text-6xl">
         <div className="flex text-6xl">
           <div className="mr-10">{'>'}</div>
           {myName}
         </div>
         <div className="ml-2 hero-anim w-10" />
       </div>
-      <div className="text-xl text-gray-700 font-light mt-16">
+      <div className="text-xl text-hero-text font-light mt-16">
         I am a web developer with around 7 years of programming experience. My current area of interest is frontend
         development.
       </div>

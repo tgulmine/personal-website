@@ -20,7 +20,7 @@ module.exports = {
       'hero-anim': '#A2AAEA',
       'hero-text': '#525F7F',
 
-      'terminal-header-bg': '#E4E3E5',
+      'terminal-header-bg': '#DBDADE',
       'terminal-header-red': '#F96256',
       'terminal-header-yellow': '#FDBC3D',
       'terminal-header-green': '#33C948',

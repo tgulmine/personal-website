@@ -43,24 +43,24 @@ const TerminalHeader: React.FC = () => {
   }
 
   return (
-    <div className="p-8 bg-gray-700 rounded-b-lg flex flex-col tracking-wider text-lg font-mulish">
+    <div className="p-8 bg-terminal-window-bg rounded-b-lg flex flex-col tracking-wider text-lg font-mulish">
       <div className="flex flex-col mb-6">
-        <div className="flex text-gray-100">
+        <div className="flex text-terminal-window-white">
           <div className="mr-2">{'>'}</div>
           <div>{name}.currentLocation</div>
         </div>
-        <div className="text-yellow-500">{getStringText(currentLocation)}</div>
+        <div className="text-terminal-window-yellow">{getStringText(currentLocation)}</div>
       </div>
       <div className="flex flex-col mb-6">
-        <div className="flex text-gray-100">
+        <div className="flex text-terminal-window-white">
           <div className="mr-2">{'>'}</div>
           <div>{name}.contactInfo</div>
         </div>
-        <div className="text-yellow-500 flex flex-wrap">
+        <div className="text-terminal-window-yellow flex flex-wrap">
           {contactInfo.map((cont: IInfo, index: number) => (
             <div key={index} className={index === interests.length - 1 ? '' : 'mr-2'}>
               {index === 0 ? '["' : '"'}
-              <a className="text-teal-400" rel="noopener noreferrer" href={cont.link} target="_blank">
+              <a className="text-terminal-window-blue" rel="noopener noreferrer" href={cont.link} target="_blank">
                 {cont.title}
               </a>
               {index === contactInfo.length - 1 ? '"]' : '",'}
@@ -69,25 +69,25 @@ const TerminalHeader: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col mb-6">
-        <div className="flex text-gray-100">
+        <div className="flex text-terminal-window-white">
           <div className="mr-2">{'>'}</div>
           <div>{name}.resume</div>
         </div>
-        <div className="text-yellow-500">
+        <div className="text-terminal-window-yellow">
           "
-          <a className="text-teal-400" rel="noopener noreferrer" href={resume.link} target="_blank">
+          <a className="text-terminal-window-blue" rel="noopener noreferrer" href={resume.link} target="_blank">
             {resume.title}
           </a>
           "
         </div>
       </div>
       <div className="flex flex-col mb-6">
-        <div className="flex text-gray-100">
+        <div className="flex text-terminal-window-white">
           <div className="mr-2">{'>'}</div>
           <div>{name}.interests</div>
         </div>
         {interests ? (
-          <div className="flex flex-wrap text-yellow-500">
+          <div className="flex flex-wrap text-terminal-window-yellow">
             [
             {interests.map((int: string, index: number) => (
               <div key={index} className={index === interests.length - 1 ? '' : 'mr-2'}>
@@ -99,19 +99,19 @@ const TerminalHeader: React.FC = () => {
         ) : null}
       </div>
       <div className="flex flex-col mb-6">
-        <div className="flex text-gray-100">
+        <div className="flex text-terminal-window-white">
           <div className="mr-2">{'>'}</div>
           <div>{name}.education</div>
         </div>
-        <div className="text-yellow-500">{getStringText(education)}</div>
+        <div className="text-terminal-window-yellow">{getStringText(education)}</div>
       </div>
       <div className="flex flex-col mb-6">
-        <div className="flex text-gray-100">
+        <div className="flex text-terminal-window-white">
           <div className="mr-2">{'>'}</div>
           <div>{name}.skills</div>
         </div>
         {skills ? (
-          <div className="flex text-yellow-500 flex-wrap">
+          <div className="flex text-terminal-window-yellow flex-wrap">
             [
             {skills.map((skill: string, index: number) => (
               <div key={index} className={index === skills.length - 1 ? '' : 'mr-2'}>
@@ -122,7 +122,7 @@ const TerminalHeader: React.FC = () => {
           </div>
         ) : null}
       </div>
-      <div className="flex text-gray-100 mb-6">
+      <div className="flex text-terminal-window-white mb-6">
         <div className="mr-2">{'>'}</div>
         <div className="terminal-anim w-2" />
       </div>
