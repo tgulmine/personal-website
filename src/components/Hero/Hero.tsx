@@ -11,9 +11,11 @@ const Hero: React.FC = () => {
   }, []);
 
   function writeName() {
-    for (let i = 0; i <= fullName.length; i++) {
-      timeoutToWrite(i);
-    }
+    setTimeout(function() {
+      for (let i = 0; i <= fullName.length; i++) {
+        timeoutToWrite(i);
+      }
+    }, 1333);
   }
 
   function timeoutToWrite(i: number) {
@@ -29,7 +31,7 @@ const Hero: React.FC = () => {
           <div className="mr-10">{'>'}</div>
           {myName}
         </div>
-        <div className="ml-2 hero-anim w-10" />
+        <div className="ml-2 hero-anim w-12" />
       </div>
       <div className="text-xl text-hero-text font-light mt-16">
         I am a web developer with around 7 years of programming experience. My current area of interest is frontend

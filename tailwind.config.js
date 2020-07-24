@@ -233,7 +233,9 @@ module.exports = {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none',
-      'terminal': '0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12)'
+      'terminal': '0 50px 100px rgba(50,50,93,.15), 0 15px 35px rgba(50,50,93,.2), 0 5px 15px rgba(0,0,0,.12)',
+      'project-card': '0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1)',
+      'project-button': '0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)'
     },
     container: {},
     cursor: {
