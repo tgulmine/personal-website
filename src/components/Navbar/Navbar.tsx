@@ -1,30 +1,32 @@
 import * as React from 'react';
 import './Navbar.scss';
+import { Link } from 'react-scroll';
 
 const Navbar: React.FC = () => {
-  function clickProjects() {
-    console.log('clicked projects');
-  }
-  function clickContact() {
-    console.log('clicked contact');
-  }
-
   return (
     <div className="flex justify-end mt-5">
-      <button
+      <Link
         className="mx-10 font-normal text-lg text-navbar-gray hover:text-navbar-purple 
-        border-button focus:outline-none"
-        onClick={() => clickProjects()}
+        border-button cursor-pointer"
+        to="projects"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
       >
         Projects
-      </button>
-      <button
+      </Link>
+      <Link
         className="mx-10 font-normal text-lg text-navbar-gray hover:text-navbar-purple 
-        border-button focus:outline-none"
-        onClick={() => clickContact()}
+        border-button cursor-pointer"
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={700}
       >
         Contact
-      </button>
+      </Link>
     </div>
   );
 };
