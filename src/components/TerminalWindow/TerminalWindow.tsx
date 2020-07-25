@@ -45,14 +45,14 @@ const TerminalHeader: React.FC = () => {
     <div className="p-8 bg-terminal-window-bg rounded-b-lg flex flex-col text-lg font-monaco leading-normal">
       <div className="flex flex-col mb-6">
         <div className="flex text-terminal-window-white">
-          <div className="mr-2 font-mulish">{'>'}</div>
+          <div className="mr-2 font-camphor">{'>'}</div>
           <div>{name}.currentLocation</div>
         </div>
         <div className="text-terminal-window-yellow">{getStringText(currentLocation)}</div>
       </div>
       <div className="flex flex-col mb-6">
         <div className="flex text-terminal-window-white">
-          <div className="mr-2 font-mulish">{'>'}</div>
+          <div className="mr-2 font-camphor">{'>'}</div>
           <div>{name}.contactInfo</div>
         </div>
         <div className="text-terminal-window-yellow flex flex-wrap">
@@ -69,7 +69,7 @@ const TerminalHeader: React.FC = () => {
       </div>
       <div className="flex flex-col mb-6">
         <div className="flex text-terminal-window-white">
-          <div className="mr-2 font-mulish">{'>'}</div>
+          <div className="mr-2 font-camphor">{'>'}</div>
           <div>{name}.resume</div>
         </div>
         <div className="text-terminal-window-yellow">
@@ -82,7 +82,7 @@ const TerminalHeader: React.FC = () => {
       </div>
       <div className="flex flex-col mb-6">
         <div className="flex text-terminal-window-white">
-          <div className="mr-2 font-mulish">{'>'}</div>
+          <div className="mr-2 font-camphor">{'>'}</div>
           <div>{name}.interests</div>
         </div>
         {interests ? (
@@ -99,7 +99,7 @@ const TerminalHeader: React.FC = () => {
       </div>
       <div className="flex flex-col mb-6">
         <div className="flex text-terminal-window-white">
-          <div className="mr-2 font-mulish">{'>'}</div>
+          <div className="mr-2 font-camphor">{'>'}</div>
           <div>{name}.education</div>
         </div>
         {education ? (
@@ -116,7 +116,7 @@ const TerminalHeader: React.FC = () => {
       </div>
       <div className="flex flex-col mb-6">
         <div className="flex text-terminal-window-white">
-          <div className="mr-2 font-mulish">{'>'}</div>
+          <div className="mr-2 font-camphor">{'>'}</div>
           <div>{name}.skills</div>
         </div>
         {skills ? (
@@ -132,7 +132,7 @@ const TerminalHeader: React.FC = () => {
         ) : null}
       </div>
       <div className="flex text-terminal-window-white mb-6">
-        <div className="mr-2 font-mulish">{'>'}</div>
+        <div className="mr-2 font-camphor">{'>'}</div>
         <div className="terminal-anim w-3" />
       </div>
     </div>

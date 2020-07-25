@@ -3,16 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
   @apply bg-bg;
 }
 
 .font-monaco {
-  font-family: Monaco,Consolas,Lucida Console,monospace; 
-  font-weight: thin;
+  font-family: Monaco,Consolas,Lucida Console,monospace;
 }
 
-.font-mulish {
-  font-family: 'Mulish', sans-serif;
-  font-weight: thin;
+.font-camphor {
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
 }

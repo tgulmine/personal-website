@@ -4,9 +4,9 @@ import { Link } from 'react-scroll';
 
 const Navbar: React.FC = () => {
   return (
-    <div className="flex justify-end mt-5">
+    <div className="flex justify-end mt-5 text-lg text-navbar-gray font-normal">
       <Link
-        className="mx-10 font-normal text-lg text-navbar-gray hover:text-navbar-purple 
+        className="mx-10 hover:text-navbar-purple 
         border-button cursor-pointer"
         to="projects"
         spy={true}
@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
         Projects
       </Link>
       <Link
-        className="mx-10 font-normal text-lg text-navbar-gray hover:text-navbar-purple 
+        className="mx-10 hover:text-navbar-purple 
         border-button cursor-pointer"
         to="contact"
         spy={true}

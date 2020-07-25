@@ -27,8 +27,8 @@ const Hero: React.FC = () => {
   return (
     <div className="flex flex-col mt-24 mb-16">
       <div className="flex text-hero-title mt-4 text-6xl">
-        <div className="flex text-6xl">
-          <div className="mr-10">{'>'}</div>
+        <div className="flex text-6xl font-monaco">
+          <div className="mr-10 font-camphor">{'>'}</div>
           {myName}
         </div>
         <div className="ml-2 hero-anim w-12" />
