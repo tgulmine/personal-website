@@ -15,24 +15,24 @@
     "projects": [
       {
         "title": "Reddit Clone",
-        "description": "Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.",
-        "skills": ["HTML5", "CSS3", "Sass", "JavaScript", "ES6", "ReactJS", "Redux"],
+        "description": "Project made with the intention to clone a Reddit subreddit page, contains responsive design and dynamic functionalities by consuming data from an API REST.",
+        "skills": ["HTML5", "React", "Javascript", "Sass", "Axios"],
         "link_demo": "https://reddit-clone-333.herokuapp.com/",
         "link_git": "https://github.com/tgulmine/reddit-clone",
         "img": "../../img/cardreddit1.png"
       },
       {
         "title": "Prime Visuals",
-        "description": "Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.",
-        "skills": ["HTML5", "CSS3", "Sass", "JavaScript", "ES6", "ReactJS", "Redux"],
+        "description": "Simulation of prime numbers visual patterns, contains the Ulam Spiral and the Parallax Compression forms of visualization.",
+        "skills": ["HTML5", "React", "Typescript", "Tailwind", "Sass", "ContextAPI"],
         "link_demo": "https://primevisuals.netlify.app/",
         "link_git": "https://github.com/tgulmine/prime-visuals",
         "img": "../../img/cardprime1.png"
       },
       {
         "title": "Dog & Quote",
-        "description": "Travel smarter by saving the places you want to go. This project was an assignment given for an interview. The requirements were to build a web-app that calls the Google Places API. It must include a map with pins and a list of locations, with some interactivity between the two.",
-        "skills": ["HTML5", "CSS3", "Sass", "JavaScript", "ES6", "ReactJS", "Redux"],
+        "description": "Web Application that shows a random quote and picture of a dog dinamically, through the data consumption from Type.Fit Quotes API & Dog API.",
+        "skills": ["HTML5", "React", "Typescript", "Tailwind", "Sass", "Axios"],
         "link_demo": "https://dog-and-quote.netlify.app/",
         "link_git": "https://github.com/tgulmine/dog-and-quote",
         "img": "../../img/carddog1.png"

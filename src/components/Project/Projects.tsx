@@ -9,7 +9,7 @@ const Projects: React.FC = () => {
       <div className="mt-6 border-b-8 border-section-border w-16" />
       {data &&
         data.projects.map((_project: any, index: number) => {
-          return <ProjectCard index={index} />;
+          return <ProjectCard key={index} index={index} />;
         })}
     </div>
   );

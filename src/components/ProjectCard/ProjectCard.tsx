@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import './ProjectCard.scss';
 import data from '../../data/data.json';
 import imgReddit from '../../img/cardreddit1.png';
@@ -28,6 +28,10 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
   const imgHeight: string = '443px'; //546px x=546*546/672 x=443.6
   const img = getImg();
 
+  /* const [description, setDescription] = useState<string>('');
+  const [descs, setDescs] = useState<string[]>(['']);
+  const [links, setLinks] = useState<string[]>(['']); */
+
   function getImg() {
     switch (index) {
       case 0:
@@ -38,6 +42,40 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
         return imgDog;
     }
   }
+
+  /* useEffect(() => {
+    if (project.description) {
+      console.log('eff');
+      setDescription(project.description);
+      checkForLinks();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); */
+
+  /* function checkForLinks() {
+    for (let i = 0; i < 3; i++) {
+      console.log('begin');
+      console.log(project.description);
+      //@ts-ignore
+      console.log(project.description.search('!'));
+      var a = project.description.search('!');
+      console.log(a);
+      if (a !== -1) {
+        project.description.replace('!', '');
+        var b = project.description.search('!');
+        var link = project.description.slice(a, b);
+        console.log(link);
+        link.replace('!', '');
+        var arrLinks = links;
+        arrLinks.push(link);
+        setLinks(arrLinks);
+        var desc = description.slice(0, a - 1);
+        var arrDescs = descs;
+        arrDescs.push(desc);
+        setDescs(arrDescs);
+      }
+    }
+  } */
 
   return (
     <div
@@ -58,13 +96,15 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
         }}
       />
       <div className="flex flex-col p-16">
-        <div className="text-3xl mb-8">{project.title}</div>
+        <div className="text-3xl font-semibold mb-8">{project.title}</div>
         <div className="text-base mb-8 leading-relaxed">{project.description}</div>
         <div className="flex mb-3">
           {project.skills &&
             project.skills.map((skill: string, index: number) => {
               return (
-                <div className="px-2 py-1 rounded border-2 border-project-skill mr-3 text-sm font-light">{skill}</div>
+                <div key={index} className="px-2 py-1 rounded border-2 border-project-skill mr-3 text-sm">
+                  {skill}
+                </div>
               );
             })}
         </div>
