@@ -16,6 +16,10 @@ const TerminalHeader: React.FC = () => {
       link: data.info.email_link
     },
     {
+      title: 'LinkedIn',
+      link: data.info.linkedin_link
+    },
+    {
       title: 'github',
       link: data.info.git_link
     }

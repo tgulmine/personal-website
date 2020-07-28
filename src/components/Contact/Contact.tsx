@@ -21,6 +21,16 @@ const Contact: React.FC = () => {
         <FontAwesomeIcon className="mt-5 mb-3 mx-10 text-contact-bar" icon={faGripLinesVertical} />
         <a
           rel="noopener noreferrer"
+          href={data.info.linkedin_link}
+          target="_blank"
+          className="hover:text-navbar-purple
+        border-button focus:outline-none"
+        >
+          LinkedIn
+        </a>
+        <FontAwesomeIcon className="mt-5 mb-3 mx-10 text-contact-bar" icon={faGripLinesVertical} />
+        <a
+          rel="noopener noreferrer"
           href={data.info.git_link}
           target="_blank"
           className="hover:text-navbar-purple
