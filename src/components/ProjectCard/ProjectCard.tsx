@@ -4,6 +4,7 @@ import data from '../../data/data.json';
 import imgReddit from '../../img/cardreddit1.png';
 import imgPrime from '../../img/cardprime1.png';
 import imgDog from '../../img/carddog1.png';
+import imgCart from '../../img/cardcart2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -40,6 +41,8 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
         return imgPrime;
       case 2:
         return imgDog;
+      case 3:
+        return imgCart;
     }
   }
 
