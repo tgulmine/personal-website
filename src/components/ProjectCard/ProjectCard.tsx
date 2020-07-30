@@ -106,9 +106,9 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
               );
             })}
         </div>
-        <div className="flex font-mulish text-sm font-bold">
+        <div className="flex justify-between lg:justify-start font-mulish text-xs lg:text-sm font-bold">
           <a
-            className="rounded mr-5 hover:m-2 bg-project-demo-bg hover:bg-project-demo-bg_hover
+            className="rounded lg:mr-5 hover:m-2 bg-project-demo-bg hover:bg-project-demo-bg_hover
             text-project-demo-text py-2.5 px-3.5 shadow-project-button move-button"
             rel="noopener noreferrer"
             href={project.link_demo}
@@ -118,7 +118,7 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
             <FontAwesomeIcon icon={faExternalLinkAlt} className="ml-1" />
           </a>
           <a
-            className="rounded mr-5 bg-project-git-bg text-project-git-text
+            className="rounded bg-project-git-bg text-project-git-text
             hover:text-project-git-text_hover py-2.5 px-3.5 shadow-project-button move-button"
             rel="noopener noreferrer"
             href={project.link_git}

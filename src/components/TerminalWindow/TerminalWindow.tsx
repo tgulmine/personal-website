@@ -38,9 +38,10 @@ const TerminalHeader: React.FC = () => {
     return newStr;
   }
 
-  function getArrayText(str: string, isLast: boolean) {
+  function getArrayText(str: string, isFirst: boolean, isLast: boolean) {
     let newStr;
-    if (isLast) newStr = '"' + str + '"';
+    if (isFirst) newStr = '["' + str + '",';
+    else if (isLast) newStr = '"' + str + '"]';
     else newStr = '"' + str + '",';
     return newStr;
   }
@@ -91,13 +92,11 @@ const TerminalHeader: React.FC = () => {
         </div>
         {interests ? (
           <div className="flex flex-wrap text-terminal-window-yellow">
-            [
             {interests.map((int: string, index: number) => (
               <div key={index} className={index === interests.length - 1 ? '' : 'mr-2'}>
-                {getArrayText(int, index === interests.length - 1)}
+                {getArrayText(int, index === 0, index === interests.length - 1)}
               </div>
             ))}
-            ]
           </div>
         ) : null}
       </div>
@@ -108,13 +107,11 @@ const TerminalHeader: React.FC = () => {
         </div>
         {education ? (
           <div className="flex text-terminal-window-yellow flex-wrap">
-            [
             {education.map((ed: string, index: number) => (
               <div key={index} className={index === education.length - 1 ? '' : 'mr-2'}>
-                {getArrayText(ed, index === education.length - 1)}
+                {getArrayText(ed, index === 0, index === education.length - 1)}
               </div>
             ))}
-            ]
           </div>
         ) : null}
       </div>
@@ -125,13 +122,11 @@ const TerminalHeader: React.FC = () => {
         </div>
         {skills ? (
           <div className="flex text-terminal-window-yellow flex-wrap">
-            [
             {skills.map((skill: string, index: number) => (
               <div key={index} className={index === skills.length - 1 ? '' : 'mr-2'}>
-                {getArrayText(skill, index === skills.length - 1)}
+                {getArrayText(skill, index === 0, index === skills.length - 1)}
               </div>
             ))}
-            ]
           </div>
         ) : null}
       </div>

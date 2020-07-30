@@ -27,11 +27,11 @@ const Hero: React.FC = () => {
   return (
     <div className="flex flex-col mt-16 lg:mt-24 mb-4 lg:mb-16">
       <div className="flex text-hero-title mt-4">
-        <div className="flex text-5xl lg:text-6xl font-monaco">
+        <div className="flex text-4.5xl lg:text-6xl font-monaco">
           <div className="mr-4 lg:mr-10 font-mulish">{'>'}</div>
           {myName}
         </div>
-        <div className="ml-2 hero-anim w-6 lg:w-12" />
+        <div className="ml-2 hero-anim w-5 lg:w-12" />
       </div>
       <div className="text-xl lg:text-2xl text-hero-text font-light mt-10 lg:mt-16 leading-loose">
         I am a web developer with around 7 years of programming experience. My current area of interest is frontend
