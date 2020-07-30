@@ -171,8 +171,9 @@ module.exports = {
       '0': '0',
       '1': '0.25rem',
       '2': '0.5rem',
+      '2.5': '0.625rem',
       '3': '0.75rem',
-      '3.5': '14px',
+      '3.5': '0.875rem',
       '4': '1rem',
       '5': '1.25rem',
       '6': '1.5rem',
@@ -284,14 +285,14 @@ module.exports = {
     },
     fontSize: {
       xs: '0.8rem',
-      sm: '0.85rem',
+      sm: '0.9rem',
       base: '1rem',
       lg: '1.125rem',
       xl: '1.2rem',
       '2xl': '1.3rem',
       '3xl': '1.5rem',
       '4xl': '1.8rem',
-      '5xl': '3rem',
+      '5xl': '2.3rem',
       '6xl': '4.5rem'
     },
     fontWeight: {
@@ -309,7 +310,8 @@ module.exports = {
       auto: 'auto',
       ...theme('spacing'),
       full: '100%',
-      screen: '100vh'
+      screen: '100vh',
+      'cardImg': '443px'
     }),
     inset: {
       '0': '0',

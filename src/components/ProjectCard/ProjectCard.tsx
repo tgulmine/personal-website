@@ -81,12 +81,7 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
   } */
 
   return (
-    <div
-      className="flex mt-16 w-full bg-project-bg text-project-text rounded shadow-project-card"
-      style={{
-        height: imgHeight
-      }}
-    >
+    <div className="flex mt-10 lg:mt-16 w-full bg-project-bg text-project-text rounded shadow-project-card lg:h-cardImg">
       <div
         className="hidden md:block"
         style={{
@@ -98,23 +93,23 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
           minHeight: imgHeight
         }}
       />
-      <div className="flex flex-col p-16">
-        <div className="text-4xl font-semibold mb-8">{project.title}</div>
-        <div className="text-base mb-8 leading-relaxed">{project.description}</div>
-        <div className="flex mb-3">
+      <div className="flex flex-col p-8 lg:p-16">
+        <div className="text-4xl font-medium mb-8">{project.title}</div>
+        <div className="text-base mb-8 leading-relaxed break-words font-normal">{project.description}</div>
+        <div className="flex flex-wrap font-mukta font-light">
           {project.skills &&
             project.skills.map((skill: string, index: number) => {
               return (
-                <div key={index} className="px-2 py-1 rounded border-2 border-project-skill mr-3 text-sm">
+                <div key={index} className="px-2 py-1 rounded border-2 border-project-skill mr-3 mb-3 text-sm">
                   {skill}
                 </div>
               );
             })}
         </div>
-        <div className="flex">
+        <div className="flex font-mulish text-sm font-bold">
           <a
             className="rounded mr-5 hover:m-2 bg-project-demo-bg hover:bg-project-demo-bg_hover
-            text-project-demo-text py-3 px-4 text-sm font-bold shadow-project-button move-button"
+            text-project-demo-text py-2.5 px-3.5 shadow-project-button move-button"
             rel="noopener noreferrer"
             href={project.link_demo}
             target="_blank"
@@ -124,7 +119,7 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
           </a>
           <a
             className="rounded mr-5 bg-project-git-bg text-project-git-text
-            hover:text-project-git-text_hover py-3 px-4 text-sm font-bold shadow-project-button move-button"
+            hover:text-project-git-text_hover py-2.5 px-3.5 shadow-project-button move-button"
             rel="noopener noreferrer"
             href={project.link_git}
             target="_blank"
