@@ -99,7 +99,7 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
         }}
       />
       <div className="flex flex-col p-16">
-        <div className="text-3xl font-semibold mb-8">{project.title}</div>
+        <div className="text-4xl font-semibold mb-8">{project.title}</div>
         <div className="text-base mb-8 leading-relaxed">{project.description}</div>
         <div className="flex mb-3">
           {project.skills &&

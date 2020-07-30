@@ -6,9 +6,9 @@ import { faGripLinesVertical } from '@fortawesome/free-solid-svg-icons';
 const Contact: React.FC = () => {
   return (
     <div className="flex flex-col items-center my-24" id="contact">
-      <div className="text-section-title text-2xl font-medium">Contact me!</div>
+      <div className="text-section-title text-3xl font-medium">Contact me!</div>
       <div className="mt-6 border-b-8 border-section-border w-16" />
-      <div className="flex justify-center text-contact-links text-lg font-normal mt-24">
+      <div className="flex justify-center text-contact-links text-xl font-normal mt-24">
         <a
           rel="noopener noreferrer"
           href={data.info.email_link}

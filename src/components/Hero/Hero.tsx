@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="ml-2 hero-anim w-12" />
       </div>
-      <div className="text-xl text-hero-text font-light mt-16">
+      <div className="text-2xl text-hero-text font-light mt-16 leading-loose">
         I am a web developer with around 7 years of programming experience. My current area of interest is frontend
         development.
       </div>
