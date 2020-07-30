@@ -81,9 +81,9 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
   } */
 
   return (
-    <div className="flex mt-10 lg:mt-16 w-full bg-project-bg text-project-text rounded shadow-project-card lg:h-cardImg">
+    <div className="flex mt-10 md:mt-16 w-full bg-project-bg text-project-text rounded shadow-project-card lg:h-cardImg">
       <div
-        className="hidden md:block"
+        className="hidden lg:block"
         style={{
           backgroundImage: `url(${img})`,
           backgroundSize: 'cover',
@@ -106,9 +106,9 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
               );
             })}
         </div>
-        <div className="flex justify-between lg:justify-start font-mulish text-xs lg:text-sm font-bold">
+        <div className="flex justify-around md:justify-start font-mulish text-xs lg:text-sm font-bold">
           <a
-            className="rounded lg:mr-5 hover:m-2 bg-project-demo-bg hover:bg-project-demo-bg_hover
+            className="rounded md:mr-5 hover:m-2 bg-project-demo-bg hover:bg-project-demo-bg_hover
             text-project-demo-text py-2.5 px-3.5 shadow-project-button move-button"
             rel="noopener noreferrer"
             href={project.link_demo}
