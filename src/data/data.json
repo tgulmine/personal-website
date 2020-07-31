@@ -2,6 +2,7 @@
     "info": {
       "name": "Thiago",
       "fullName": "Thiago Gulmine",
+      "description": "I am a frontend developer from Brasília, Brazil, focusing mainly on React and its surroundings technologies. I also have a background in the gaming industry as a game developer.",
       "email": "tgulmine@gmail.com",
       "email_link": "mailto:tgulmine@gmail.com",
       "linkedin_link": "https://www.linkedin.com/in/tgulmine/",
@@ -11,7 +12,7 @@
       "education": ["Digital Games, Instituto de Educação Superior de Brasília - IESB", "Computer Science, Universidade de Brasília - UnB"],
       "location": "Brazil, Brasília - DF",
       "interests": ["coding", "gaming", "coffee", "reading"],
-      "skills": ["Sass", "Javascript", "Typescript", "React", "git", "Tailwind"]
+      "skills": ["React", "Sass", "Javascript", "Typescript", "git", "Tailwind"]
     },
     "projects": [
       {
@@ -39,7 +40,7 @@
         "img": "../../img/carddog1.png"
       },
       {
-        "title": "Shopping Cart Challenge",
+        "title": "Shopping Cart",
         "description": "A challenge made for practice, an API provides products and vouchers information, and the application simulates a shopping cart. The prices and quantities are updated as the user adds products to the cart. The voucher codes are #30OFF, #100DOLLARS & #SHIPIT.",
         "skills": ["HTML5", "React", "Typescript", "Tailwind", "Sass", "Axios"],
         "link_demo": "https://shopping-cart-challenge.netlify.app/",

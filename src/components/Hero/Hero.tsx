@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.scss';
+import data from '../../data/data.json';
 
 const Hero: React.FC = () => {
-  const fullName: string = 'Thiago Gulmine';
+  const fullName: string = data.info.fullName;
+  const description: string = data.info.description;
   const [myName, setMyName] = useState('');
 
   useEffect(() => {
@@ -33,10 +35,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="ml-2 hero-anim w-5 md:w-12" />
       </div>
-      <div className="text-xl md:text-2xl text-hero-text font-light mt-10 md:mt-16 leading-loose">
-        I am a web developer with around 7 years of programming experience. My current area of interest is frontend
-        development.
-      </div>
+      <div className="text-xl md:text-2xl text-hero-text font-light mt-10 md:mt-16 leading-loose">{description}</div>
     </div>
   );
 };
