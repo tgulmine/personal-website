@@ -8,7 +8,7 @@
       "linkedin_link": "https://www.linkedin.com/in/tgulmine/",
       "git_link": "https://github.com/tgulmine",
       "pdf_title": "tgulmine.pdf",
-      "pdf_link": "https://drive.google.com/file/d/1liCl-M31hGRxE5l-SbFM2ULQo5L5lUAZ",
+      "pdf_link": "https://drive.google.com/file/d/19TS8VMUKmnwYJHDFOmPxr29k5xTEOwvr",
       "education": ["Digital Games, Instituto de Educação Superior de Brasília - IESB", "Computer Science, Universidade de Brasília - UnB"],
       "location": "Brazil, Brasília - DF",
       "interests": ["coding", "gaming", "coffee", "reading"],
@@ -45,7 +45,7 @@
         "skills": ["HTML5", "React", "Typescript", "Tailwind", "Sass", "Axios"],
         "link_demo": "https://shopping-cart-challenge.netlify.app/",
         "link_git": "https://github.com/tgulmine/shopping-cart-challenge",
-        "img": "../../img/cardprime1.png"
+        "img": "../../img/cardcart2.png"
       }
     ]
   }
