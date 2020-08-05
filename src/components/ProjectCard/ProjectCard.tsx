@@ -4,7 +4,6 @@ import data from '../../data/data.json';
 import imgReddit from '../../img/cardreddit1.png';
 import imgPrime from '../../img/cardprime1.png';
 import imgDog from '../../img/carddog1.png';
-import imgCart from '../../img/cardcart2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -29,10 +28,6 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
   const imgHeight: string = '443px'; //546px x=546*546/672 x=443.6
   const img = getImg();
 
-  /* const [description, setDescription] = useState<string>('');
-  const [descs, setDescs] = useState<string[]>(['']);
-  const [links, setLinks] = useState<string[]>(['']); */
-
   function getImg() {
     switch (index) {
       case 0:
@@ -41,44 +36,8 @@ const ProjectCard: React.FC<ProjectCardProps> = props => {
         return imgPrime;
       case 2:
         return imgDog;
-      case 3:
-        return imgCart;
     }
   }
-
-  /* useEffect(() => {
-    if (project.description) {
-      console.log('eff');
-      setDescription(project.description);
-      checkForLinks();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); */
-
-  /* function checkForLinks() {
-    for (let i = 0; i < 3; i++) {
-      console.log('begin');
-      console.log(project.description);
-      //@ts-ignore
-      console.log(project.description.search('!'));
-      var a = project.description.search('!');
-      console.log(a);
-      if (a !== -1) {
-        project.description.replace('!', '');
-        var b = project.description.search('!');
-        var link = project.description.slice(a, b);
-        console.log(link);
-        link.replace('!', '');
-        var arrLinks = links;
-        arrLinks.push(link);
-        setLinks(arrLinks);
-        var desc = description.slice(0, a - 1);
-        var arrDescs = descs;
-        arrDescs.push(desc);
-        setDescs(arrDescs);
-      }
-    }
-  } */
 
   return (
     <div className="flex mt-10 md:mt-16 w-full bg-project-bg text-project-text rounded shadow-project-card lg:h-cardImg">
