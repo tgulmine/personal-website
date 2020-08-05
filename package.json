@@ -72,7 +72,7 @@
     "terser-webpack-plugin": "2.2.1",
     "ts-jest": "^26.1.4",
     "ts-pnp": "1.1.5",
-    "typescript": "3.6.3",
+    "typescript": "^4.1.0-dev.20200805",
     "url-loader": "2.3.0",
     "webpack": "4.41.2",
     "webpack-dev-server": "3.9.0",
