@@ -10,6 +10,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@svgr/webpack": "4.3.3",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.5",
     "@types/react-dom": "16.9.0",
@@ -27,6 +29,9 @@
     "css-loader": "3.2.0",
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.5.0",
     "eslint": "^6.6.0",
     "eslint-config-react-app": "^5.1.0",
     "eslint-loader": "3.0.2",
@@ -39,8 +44,9 @@
     "fs-extra": "^8.1.0",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
-    "jest": "24.9.0",
+    "jest": "^26.2.2",
     "jest-environment-jsdom-fourteen": "0.1.0",
+    "jest-fetch-mock": "^3.0.3",
     "jest-resolve": "24.9.0",
     "jest-watch-typeahead": "0.4.2",
     "mini-css-extract-plugin": "0.8.0",
@@ -64,6 +70,7 @@
     "style-loader": "1.0.0",
     "tailwindcss": "^1.1.4",
     "terser-webpack-plugin": "2.2.1",
+    "ts-jest": "^26.1.4",
     "ts-pnp": "1.1.5",
     "typescript": "3.6.3",
     "url-loader": "2.3.0",
@@ -75,7 +82,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "test:coverage": "node scripts/test.js --env=jsdom --coverage --runInBand --watchAll=false",
+    "isready": "npm run format && npm run lint && npm run test:coverage && yarn build"
   },
   "eslintConfig": {
     "extends": "react-app"
