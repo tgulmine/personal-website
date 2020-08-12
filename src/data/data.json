@@ -8,7 +8,7 @@
       "linkedin_link": "https://www.linkedin.com/in/tgulmine/",
       "git_link": "https://github.com/tgulmine",
       "pdf_title": "tgulmine.pdf",
-      "pdf_link": "https://drive.google.com/file/d/1k-qiJakmHV2En0eBC92DBSwS-oViFFfr",
+      "pdf_link": "https://drive.google.com/file/d/1yptJ70WetT-EHkcYNZwgksy5BUXkv8_c",
       "education": ["Digital Games, Instituto de Educação Superior de Brasília - IESB", "Computer Science, Universidade de Brasília - UnB"],
       "location": "Brazil, Brasília - DF",
       "interests": ["coding", "gaming", "coffee", "reading"],
@@ -38,6 +38,14 @@
         "link_demo": "https://dog-and-quote.netlify.app/",
         "link_git": "https://github.com/tgulmine/dog-and-quote",
         "img": "../../img/carddog1.png"
+      },
+      {
+        "title": "Shopping Cart",
+        "description": "A challenge made for practice, an API provides products and vouchers information, and the application simulates a shopping cart. The prices and quantities are updated as the user adds products to the cart. The voucher codes are #30OFF, #100DOLLARS & #SHIPIT.",
+        "skills": ["HTML5", "React", "Typescript", "Tailwind", "Sass", "Axios"],
+        "link_demo": "https://shopping-cart-challenge.netlify.app/",
+        "link_git": "https://github.com/tgulmine/shopping-cart",
+        "img": "../../img/cardcart2.png"
       }
     ]
   }
